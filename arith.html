@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Factorization Game - Online Speed Drill</title>
+    <link href='./arith.css' rel='stylesheet'>
+    <!-- credits to arithmetic.zetamac.com for most of the code -->
+  </head>
+  <body>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'></script>
+    <div id='game'>
+      <span class='left'>Seconds left:</span>
+      <span class='correct'>Score: 0</span>
+      <div class='banner'>
+        <div class='start'>
+          <span class='problem'></span>
+          =
+          <input class='answer'>
+        </div>
+        <div class='end'>
+          <p class='correct'>Score: 0</p>
+          <p>
+            <a href=''>Try again</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src='./arith.js'></script>
+    <!-- pass parameters here -->
+    <script>Arithmetic.init({duration: 120, max_prime: 25, max_num: 2000, min_num: 50, bias: 30, stopping: 0.3});</script>
+  </body>
+</html>
+
+
